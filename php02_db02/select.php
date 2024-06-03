@@ -51,6 +51,7 @@ ini_set("display_errors", 1);
 try {
   //Password:MAMP='root',XAMPP=''
   $pdo = new PDO('mysql:dbname=php02_db02;charset=utf8mb4;host=localhost','root','');
+  // $pdo = new PDO('mysql:dbname=php02_db02;charset=utf8mb4;unix_socket=/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock','root','');
 } catch (PDOException $e) {
   exit('DB_ConnectError:'.$e->getMessage());
 }
